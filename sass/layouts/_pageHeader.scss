@@ -1,0 +1,12 @@
+.page-header {
+  &__container {
+    @include flexCentered();
+    border-bottom: solid 1px #ececec;
+  }
+
+  &__logo {
+    color: var(--title-text-color);
+    text-align: left;
+    margin-right: 93px;
+  }
+}

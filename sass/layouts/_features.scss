@@ -1,0 +1,30 @@
+.features {
+  &__container {
+    @extend %list;
+    display: flex;
+  }
+  &__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__list:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__descr {
+    line-height: 1.71;
+  }
+  &__box {
+    @include flexCentered();
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
