@@ -1,5 +1,8 @@
 .nav__list {
   display: flex;
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
+  }
 }
 .nav__link {
   position: relative;

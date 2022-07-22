@@ -15,15 +15,13 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
 }
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section--gadget {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }

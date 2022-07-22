@@ -1,8 +1,26 @@
 .features {
   &__container {
     @extend %list;
+    @extend .section--gadget;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
+  &__list {
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+
   &__title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -12,16 +30,11 @@
     margin-bottom: 10px;
   }
 
-  &__list:not(:last-child) {
-    margin-right: 30px;
-  }
-
   &__descr {
     line-height: 1.71;
   }
   &__box {
     @include flexCentered();
-    width: 270px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;

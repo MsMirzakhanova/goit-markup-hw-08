@@ -1,15 +1,36 @@
 .page-footer {
   background-color: var(--secondary-bg-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
 
   &__container {
-    display: flex;
-    align-items: baseline;
+    @extend .section--gadget;
+    text-align: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 
   &__box {
-    margin-right: 70px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
   }
 
   &__logo {
@@ -33,7 +54,6 @@
 /*footer-icon*/
 
 .text {
-  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -41,11 +61,18 @@
   text-transform: uppercase;
   color: var(--primary-bg-color);
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .subscription {
   display: block;
-  padding-left: 0;
-  margin-right: 93px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
   &__social-networks {
     margin-left: 0;
