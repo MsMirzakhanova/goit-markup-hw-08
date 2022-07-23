@@ -13,6 +13,7 @@
 }
 
 .modal {
+  z-index: 10000;
   position: absolute;
   padding: 40px;
   top: 50%;
