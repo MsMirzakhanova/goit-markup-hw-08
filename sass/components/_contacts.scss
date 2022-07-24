@@ -2,9 +2,6 @@
   @extend %list;
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: auto;
   }
 

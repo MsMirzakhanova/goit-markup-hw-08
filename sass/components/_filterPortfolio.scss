@@ -1,9 +1,18 @@
 .filter__container {
-  @include flexCentered;
-  margin-bottom: 50px;
-}
-.filter__link:not(:last-child) {
-  margin-right: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    @include flexCentered;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include flexCentered;
+  }
 }
 
 .filter__button {
