@@ -9,11 +9,11 @@
   @media screen and (min-width: 1200px) {
     display: none;
   }
-}
 
-.mobile-header__logo {
-  display: block;
-  color: var(--title-text-color);
+  &__logo {
+    display: block;
+    color: var(--title-text-color);
+  }
 }
 
 .mobile-header__button {
@@ -139,8 +139,9 @@
 
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-.mobile-menu__socials__item:not(:last-child) .mobile-menu__socials__link {
-  padding-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  &__item:not(:last-child) &__link {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }
