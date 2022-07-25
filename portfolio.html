@@ -27,11 +27,9 @@
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link">Студия</a>
+              <a href="./index.html" class="nav__link nav__link--current">Студия</a>
             </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
-            </li>
+            <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
             <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
@@ -52,6 +50,45 @@
             +380961111111
           </a>
         </div>
+      </div>
+      <!--Mobile menu-->
+      <div class="mobile-menu" data-menu>
+        <ul class="mobile-menu__nav list">
+          <li class="mobile-menu__nav__item"><a class="" href="Студия"></a></li>
+          <li class="mobile-menu__nav__item"><a href="Портфолио"></a></li>
+          <li class="mobile-menu__nav__item"><a href="Контакты"></a></li>
+        </ul>
+
+        <ul class="mobile-menu__contacts list">
+          <li class="mobile-menu__contacts__item"><a class="accent" href="380961111111"></a></li>
+          <li class="mobile-menu__contacts__item"><a href="info@devstudio.com"></a></li>
+        </ul>
+        <ul class="list mobile-menu__socials">
+          <li class="mobile-menu__socials__item">
+            <a class="mobile-menu__socials__link" href="Instagram"></a>
+          </li>
+          <li class="mobile-menu__socials__item">
+            <a class="mobile-menu__socials__link" href="Twitter"></a>
+          </li>
+          <li class="mobile-menu__socials__item">
+            <a class="mobile-menu__socials__link" href="Facebook"></a>
+          </li>
+          <li class="mobile-menu__socials__item">
+            <a class="mobile-menu__socials__link" href="LinkedIn"></a>
+          </li>
+        </ul>
+      </div>
+      <!--Бургер меню-->
+      <div class="mobile-header container">
+        <a href="./index.html" class="mobile-header__logo logo">
+          <span class="logo__part">Web</span>Studio</a
+        >
+        <button class="mobile-header__button" type="button" data-menu-button>
+          <svg class="mobile-header__icon" width="24" height="16">
+            <use class="mobile-header__burger" href="./images/symbol-defs.svg#burger-menu"></use>
+            <use class="mobile-header__close" href="./images/symbol-defs.svg#menu-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -336,4 +373,5 @@
       </div>
     </footer>
   </body>
+  <script src="./js/menu.js"></script>
 </html>
