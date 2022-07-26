@@ -2,11 +2,10 @@
   background-color: var(--secondary-bg-color);
 
   &__container {
-    @extend .section--gadget;
-    text-align: center;
-    justify-content: center;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
+    justify-content: center;
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -15,23 +14,25 @@
     }
 
     @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
       display: flex;
       flex-wrap: nowrap;
       text-align: left;
-      padding-top: 94px;
-      padding-bottom: 94px;
     }
   }
 
   &__box {
-    margin-bottom: 60px;
-
     @media screen and (min-width: 768px) {
       margin-right: 165px;
     }
 
     @media screen and (min-width: 1200px) {
       margin-right: 70px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 60px;
     }
   }
 
@@ -70,7 +71,10 @@
 }
 .subscription {
   display: block;
-  margin-bottom: 60px;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
