@@ -6,7 +6,9 @@
     width: 161px;
   }
 
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }

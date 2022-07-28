@@ -28,6 +28,10 @@
     text-align: left;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 480px) {
+      text-align: center;
+    }
   }
 
   &__descr {
